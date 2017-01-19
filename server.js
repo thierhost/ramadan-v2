@@ -32,7 +32,7 @@ app.get('/prieres',function (req,res) {
         if(err) {
             res.json({'not-found':404});
         } else{
-            res.json({'posts':prieres});
+            res.json(prieres);
         }
     })
 
