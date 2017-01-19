@@ -49,7 +49,7 @@ for (let i = 0 ; i < tab_prieres.length ; i++){
         if(err){
             console.log(err);
         }else{
-            if(user){
+            if(priere){
                 console.log('priere created '+ priere);
             }else{
                 console.log(' impossible de creer la priere')

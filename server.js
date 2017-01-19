@@ -28,7 +28,7 @@ var Prieres = require('./prieres');
 // prieres
 
 app.get('/prieres',function (req,res) {
-    Prieres.find(function (err,posts) {
+    Prieres.find(function (err,prieres) {
         if(err) {
             res.json({'not-found':404});
         } else{
