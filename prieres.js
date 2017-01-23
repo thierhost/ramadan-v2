@@ -2,13 +2,14 @@
 var mongoose = require('mongoose');
 
 var PriereSchema = mongoose.Schema({
-
-    Date: Date,
+    Date: String,
     Sobh: String,
     Chorouq: String,
     Dohr : String,
     Asr : String,
-    Maghreb: String
+    Maghreb: String,
+    Rakas : String,
+    Sourates : String
 
 });
 

@@ -38,12 +38,14 @@ var tab_prieres = [{"Date":" 6 juin","Sobh":"03:23","Chorouq":"05:46","Dohr":"13
 
 for (let i = 0 ; i < tab_prieres.length ; i++){
     let  priere = new Prieres({
-        Date: tab_prieres[i].date,
+        Date: tab_prieres[i].Date,
         Sobh: tab_prieres[i].Sobh,
         Chorouq: tab_prieres[i].Chorouq,
         Dohr : tab_prieres[i].Dohr,
         Asr : tab_prieres[i].Asr,
-        Maghreb: tab_prieres[i].Maghreb
+        Maghreb: tab_prieres[i].Maghreb,
+        Rakas: tab_prieres[i].Rakas,
+        Sourates: tab_prieres[i].Sourates
     });
     priere.save(function (err,priere) {
         if(err){
